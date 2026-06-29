@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b1cjw01ogcwu8"]
+
+[ext_resource type="Script" uid="uid://bf300y4pof8vm" path="res://framework/objet/balle.gd" id="1_vdaid"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q22ve"]
+load_path = "res://.godot/imported/3.png-07c5768e3d3b6b177499b36f8aead85e.ctex"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p42oe"]
+radius = 8.0
+
+[node name="balle" type="Area2D" unique_id=327071935]
+script = ExtResource("1_vdaid")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1981534664]
+texture = SubResource("CompressedTexture2D_q22ve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=332470684]
+shape = SubResource("CircleShape2D_p42oe")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=676113014]
+position = Vector2(6, -6)
+rect = Rect2(-10, 1, 9, 9)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

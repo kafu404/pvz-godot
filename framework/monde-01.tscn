@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cvie5k3od4fjj"]
+
+[ext_resource type="Texture2D" uid="uid://c3dci6un0frmh" path="res://assets/Items/Background/Background_0.jpg" id="1_rsgwo"]
+[ext_resource type="PackedScene" uid="uid://dyu3w82v8foci" path="res://framework/classes/PlantGeneration.tscn" id="2_wyqq2"]
+[ext_resource type="PackedScene" uid="uid://db5xq26qennpc" path="res://framework/classes/PlantAttaque.tscn" id="3_cnbn6"]
+[ext_resource type="PackedScene" uid="uid://nwkx08iny0uk" path="res://framework/classes/PlantDefense.tscn" id="4_nxqox"]
+
+[node name="monde" type="Node2D" unique_id=1250805820]
+
+[node name="Background0" type="Sprite2D" parent="." unique_id=140907156]
+position = Vector2(719.5, 320.5)
+scale = Vector2(1.0235714, 1.0783334)
+texture = ExtResource("1_rsgwo")
+
+[node name="plantGeneration" parent="Background0" unique_id=358894358 instance=ExtResource("2_wyqq2")]
+position = Vector2(-257.43195, -98.76352)
+temp_de_generation = 3.0
+
+[node name="PlantAttaque" parent="Background0" unique_id=476260219 instance=ExtResource("3_cnbn6")]
+position = Vector2(-159.73492, -89.48996)
+scale = Vector2(0.9769714, 0.92735696)
+
+[node name="PlantDefense" parent="Background0" unique_id=560010461 instance=ExtResource("4_nxqox")]
+position = Vector2(-80.60016, -89.48993)
+scale = Vector2(0.9769713, 0.9273569)

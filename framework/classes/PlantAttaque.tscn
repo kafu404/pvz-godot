@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://db5xq26qennpc"]
+
+[ext_resource type="Script" uid="uid://cfhssehpmstm1" path="res://framework/classes/PlantAttaque.gd" id="1_0hlqs"]
+[ext_resource type="PackedScene" uid="uid://b1cjw01ogcwu8" path="res://framework/objet/balle.tscn" id="2_me2v4"]
+[ext_resource type="Texture2D" uid="uid://c704phcypc5s8" path="res://assets/Plants/PeaShooter/PeaShooter.png" id="2_x1ip5"]
+
+[sub_resource type="Animation" id="Animation_jfv13"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_x1ip5")]
+}
+
+[sub_resource type="Animation" id="Animation_mq3wp"]
+resource_name = "idle"
+length = 1.6666666
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_33qtj"]
+resource_name = "shoot"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.20000002, 0.43333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [11, 12, 13]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.16666667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"spawnear_balle"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jfv13"]
+_data = {
+&"RESET": SubResource("Animation_jfv13"),
+&"idle": SubResource("Animation_mq3wp"),
+&"shoot": SubResource("Animation_33qtj")
+}
+
+[node name="PlantAttaque" type="Node2D" unique_id=476260219]
+script = ExtResource("1_0hlqs")
+balle_instance = ExtResource("2_me2v4")
+
+[node name="Timer" type="Timer" parent="." unique_id=164730029]
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1287926709]
+position = Vector2(43, -14)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1197519439]
+libraries/ = SubResource("AnimationLibrary_jfv13")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1002802369]
+texture = ExtResource("2_x1ip5")
+hframes = 4
+vframes = 7
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

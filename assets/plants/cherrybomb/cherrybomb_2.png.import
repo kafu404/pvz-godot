@@ -2,17 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbcw0xg3ihchx"
-path="res://.godot/imported/cherrybomb_2.png-1dd177c92badc925e7c2e1325d69f17d.ctex"
+uid="uid://dlwuultafp4r0"
+path="res://.godot/imported/CherryBomb_2.png-227fac60fb8e661c099e8afafa454011.ctex"
 metadata={
 "vram_texture": false
 }
-generator_parameters={}
 
 [deps]
 
-source_file="res://assets/plants/cherrybomb/cherrybomb_2.png"
-dest_files=["res://.godot/imported/cherrybomb_2.png-1dd177c92badc925e7c2e1325d69f17d.ctex"]
+source_file="res://assets/Plants/CherryBomb/CherryBomb_2.png"
+dest_files=["res://.godot/imported/CherryBomb_2.png-227fac60fb8e661c099e8afafa454011.ctex"]
 
 [params]
 
@@ -38,4 +37,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

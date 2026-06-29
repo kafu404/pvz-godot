@@ -1,0 +1,150 @@
+[gd_scene format=3 uid="uid://dyu3w82v8foci"]
+
+[ext_resource type="Script" uid="uid://epovijl5q85m" path="res://framework/classes/PlantGeneration.gd" id="1_13ikd"]
+[ext_resource type="Texture2D" uid="uid://lra25e03piqc" path="res://assets/Plants/SunFlower/SunFlower.png" id="2_781xg"]
+[ext_resource type="PackedScene" uid="uid://6241ms4davej" path="res://framework/objet/Soleil.tscn" id="2_ax582"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ax582"]
+atlas = ExtResource("2_781xg")
+region = Rect2(0, 0, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lsdta"]
+atlas = ExtResource("2_781xg")
+region = Rect2(73, 0, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jd6ig"]
+atlas = ExtResource("2_781xg")
+region = Rect2(146, 0, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlbj4"]
+atlas = ExtResource("2_781xg")
+region = Rect2(219, 0, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5nru"]
+atlas = ExtResource("2_781xg")
+region = Rect2(0, 74, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2kd5h"]
+atlas = ExtResource("2_781xg")
+region = Rect2(73, 74, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wb6m6"]
+atlas = ExtResource("2_781xg")
+region = Rect2(146, 74, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhh1u"]
+atlas = ExtResource("2_781xg")
+region = Rect2(219, 74, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qemxw"]
+atlas = ExtResource("2_781xg")
+region = Rect2(0, 148, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4cmj"]
+atlas = ExtResource("2_781xg")
+region = Rect2(73, 148, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ppuo"]
+atlas = ExtResource("2_781xg")
+region = Rect2(146, 148, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xsoy6"]
+atlas = ExtResource("2_781xg")
+region = Rect2(219, 148, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sylmy"]
+atlas = ExtResource("2_781xg")
+region = Rect2(0, 222, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjbgu"]
+atlas = ExtResource("2_781xg")
+region = Rect2(73, 222, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gssyt"]
+atlas = ExtResource("2_781xg")
+region = Rect2(146, 222, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_teusq"]
+atlas = ExtResource("2_781xg")
+region = Rect2(219, 222, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t04gt"]
+atlas = ExtResource("2_781xg")
+region = Rect2(0, 296, 73, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8fq7"]
+atlas = ExtResource("2_781xg")
+region = Rect2(73, 296, 73, 74)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_13ikd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ax582")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lsdta")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jd6ig")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dlbj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5nru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2kd5h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wb6m6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhh1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qemxw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4cmj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ppuo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xsoy6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sylmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gjbgu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gssyt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_teusq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t04gt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8fq7")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="plantGeneration" type="Node2D" unique_id=358894358]
+script = ExtResource("1_13ikd")
+scene_soleil = ExtResource("2_ax582")
+
+[node name="Timer" type="Timer" parent="." unique_id=1681295869]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=208996642]
+sprite_frames = SubResource("SpriteFrames_13ikd")
+animation = &"idle"
+frame_progress = 0.12520418

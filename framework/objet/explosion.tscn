@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dfid14g34rkfq"]
+
+[ext_resource type="Texture2D" uid="uid://c3iq74wgcjokp" path="res://assets/Bullets/PeaNormal/start/peaShoot.png" id="1_xp6ru"]
+[ext_resource type="Script" uid="uid://6xphit6dwrct" path="res://framework/objet/explosion.gd" id="2_5r5wc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1c2o"]
+atlas = ExtResource("1_xp6ru")
+region = Rect2(100, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a33bl"]
+atlas = ExtResource("1_xp6ru")
+region = Rect2(50, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28shy"]
+atlas = ExtResource("1_xp6ru")
+region = Rect2(0, 0, 50, 50)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p42oe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1c2o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a33bl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28shy")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="explosion" type="AnimatedSprite2D" unique_id=1088848124]
+sprite_frames = SubResource("SpriteFrames_p42oe")
+frame = 2
+frame_progress = 1.0
+script = ExtResource("2_5r5wc")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]
