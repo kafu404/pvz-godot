@@ -1,9 +1,18 @@
 [gd_scene format=3 uid="uid://c2a4k6l47mfbi"]
 
+[ext_resource type="Script" uid="uid://tjs0yxgnpfyr" path="res://framework/classes/celulle.gd" id="1_n8rax"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_htlyr"]
-size = Vector2(81, 110.5)
+size = Vector2(71.5, 108.25)
 
 [node name="celulle" type="Area2D" unique_id=525535596]
+collision_layer = 8
+collision_mask = 8
+script = ExtResource("1_n8rax")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1875706746]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=14804922]
 shape = SubResource("RectangleShape2D_htlyr")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

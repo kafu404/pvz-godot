@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://2wgp70nq1p1w" path="res://framework/UI/hud.tscn" id="5_puf7r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p42oe"]
-size = Vector2(81, 110.5)
+size = Vector2(71.5, 108.25)
 
 [node name="monde" type="Node2D" unique_id=1250805820]
 
@@ -36,5 +36,5 @@ offset_right = 1153.0
 offset_bottom = 644.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=899825441]
-position = Vector2(468.5, 348.75)
+position = Vector2(384, 454)
 shape = SubResource("RectangleShape2D_p42oe")
