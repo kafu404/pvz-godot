@@ -22,10 +22,9 @@ func disparait():
 		animation_Pea.play("shoot")
 
 func spawnear_balle():
-	var balle : Balle = balle_instance.instantiate()
-	get_tree().current_scene.add_child(balle)
-	balle.global_position = marker_2d.global_position
-	print("chius appellé")
+	var oui : Balle = balle_instance.instantiate()
+	get_tree().current_scene.add_child(oui)
+	oui.global_position = marker_2d.global_position
 
 func _on_animation_player_animation_finished(anim_name: StringName):
 	if anim_name == "shoot":

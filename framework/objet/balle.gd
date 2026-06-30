@@ -1,19 +1,20 @@
 class_name Balle
 extends Area2D
-const EXPLOSION = preload("uid://dfid14g34rkfq")
+const EXPLOSION = preload("res://framework/objet/explosion.gd")
 
-var speed : float = 100.0
+var speed : float = 300.0
 
 func _physics_process(delta: float):
-	position.x = speed * delta
+	position.x += speed * delta
+
 
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()
 
-
-func _on_body_entered(body: Node2D):
+#body: Node2D
+func _on_body_entered():
 	pass
 	#if body is Zombie : 
 		#var explo = EXPLOSION.instantiate()

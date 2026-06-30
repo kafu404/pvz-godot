@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dvw8je5k3vkmr"]
+
+[ext_resource type="PackedScene" uid="uid://db5xq26qennpc" path="res://framework/classes/PlantAttaque.tscn" id="1_hq5f6"]
+
+[node name="PlantAttaque" unique_id=476260219 instance=ExtResource("1_hq5f6")]

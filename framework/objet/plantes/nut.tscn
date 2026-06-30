@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dqr2t0xeqow3g"]
+
+[ext_resource type="PackedScene" uid="uid://nwkx08iny0uk" path="res://framework/classes/PlantDefense.tscn" id="1_ykbn2"]
+
+[node name="PlantDefense" unique_id=560010461 instance=ExtResource("1_ykbn2")]

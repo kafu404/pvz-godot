@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://2wgp70nq1p1w"]
+
+[ext_resource type="Script" uid="uid://ii32tmn8pqyn" path="res://framework/UI/hud.gd" id="1_gv46l"]
+[ext_resource type="Texture2D" uid="uid://c7imajcq6o6un" path="res://assets/Plants/Sun/Sun.png" id="2_yn1dl"]
+[ext_resource type="PackedScene" uid="uid://b42aj06hb8wrk" path="res://framework/UI/plante.tscn" id="3_yn1dl"]
+[ext_resource type="Texture2D" uid="uid://c403k1edf7w7e" path="res://assets/Cards/card_peashooter.png" id="4_dfniv"]
+[ext_resource type="Texture2D" uid="uid://c1p3stkfdrwja" path="res://assets/Cards/card_wallnut.png" id="5_dfniv"]
+[ext_resource type="PackedScene" uid="uid://dvw8je5k3vkmr" path="res://framework/objet/plantes/peeShooter.tscn" id="5_u7jvb"]
+[ext_resource type="Texture2D" uid="uid://bnapl1kprotyy" path="res://assets/Cards/card_sunflower.png" id="6_n21m3"]
+[ext_resource type="PackedScene" uid="uid://dqr2t0xeqow3g" path="res://framework/objet/plantes/nut.tscn" id="7_8gl75"]
+[ext_resource type="PackedScene" uid="uid://bkv117fpnq4qf" path="res://framework/objet/plantes/sunFlower.tscn" id="9_sam6q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tknf"]
+atlas = ExtResource("2_yn1dl")
+region = Rect2(0.98921967, -0.5935364, 78.07006, 79.61068)
+
+[node name="HUD" type="Control" unique_id=225797761]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_gv46l")
+
+[node name="soleilCount" type="Panel" parent="." unique_id=168351785]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 22.0
+offset_right = 131.0
+offset_bottom = 62.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="soleilCount" unique_id=1649489508]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 116.0
+offset_bottom = 37.0
+
+[node name="TextureRect" type="TextureRect" parent="soleilCount/HBoxContainer" unique_id=1287508514]
+layout_mode = 2
+texture = SubResource("AtlasTexture_4tknf")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="soleilCount/HBoxContainer" unique_id=1014673395]
+layout_mode = 2
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 25
+text = "0"
+
+[node name="Panel" type="Panel" parent="." unique_id=1730694345]
+custom_minimum_size = Vector2(90, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.022000002
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 94.542
+offset_right = 102.0
+offset_bottom = -125.73584
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1411151085]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 31.264
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 67
+
+[node name="plante" parent="Panel/VBoxContainer" unique_id=1333581620 instance=ExtResource("3_yn1dl")]
+layout_mode = 2
+texture = ExtResource("4_dfniv")
+prix = 100
+placer_plante = ExtResource("5_u7jvb")
+
+[node name="plante2" parent="Panel/VBoxContainer" unique_id=61260418 instance=ExtResource("3_yn1dl")]
+layout_mode = 2
+texture = ExtResource("5_dfniv")
+temp_de_recup = 5.0
+placer_plante = ExtResource("7_8gl75")
+
+[node name="plante3" parent="Panel/VBoxContainer" unique_id=404076271 instance=ExtResource("3_yn1dl")]
+layout_mode = 2
+texture = ExtResource("6_n21m3")
+temp_de_recup = 1.0
+placer_plante = ExtResource("9_sam6q")

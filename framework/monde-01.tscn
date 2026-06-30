@@ -4,6 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://dyu3w82v8foci" path="res://framework/classes/PlantGeneration.tscn" id="2_wyqq2"]
 [ext_resource type="PackedScene" uid="uid://db5xq26qennpc" path="res://framework/classes/PlantAttaque.tscn" id="3_cnbn6"]
 [ext_resource type="PackedScene" uid="uid://nwkx08iny0uk" path="res://framework/classes/PlantDefense.tscn" id="4_nxqox"]
+[ext_resource type="PackedScene" uid="uid://2wgp70nq1p1w" path="res://framework/UI/hud.tscn" id="5_puf7r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p42oe"]
+size = Vector2(81, 110.5)
 
 [node name="monde" type="Node2D" unique_id=1250805820]
 
@@ -21,5 +25,16 @@ position = Vector2(-159.73492, -89.48996)
 scale = Vector2(0.9769714, 0.92735696)
 
 [node name="PlantDefense" parent="Background0" unique_id=560010461 instance=ExtResource("4_nxqox")]
-position = Vector2(-80.60016, -89.48993)
+position = Vector2(-160.71182, 32.921165)
 scale = Vector2(0.9769713, 0.9273569)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=247359195]
+
+[node name="HUD" parent="." unique_id=225797761 instance=ExtResource("5_puf7r")]
+offset_top = -3.0
+offset_right = 1153.0
+offset_bottom = 644.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=899825441]
+position = Vector2(468.5, 348.75)
+shape = SubResource("RectangleShape2D_p42oe")

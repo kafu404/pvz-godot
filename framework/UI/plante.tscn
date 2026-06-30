@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://b42aj06hb8wrk"]
+
+[ext_resource type="Script" uid="uid://bvcq63g4j7soo" path="res://framework/UI/plante.gd" id="1_5aoi6"]
+[ext_resource type="Texture2D" uid="uid://ckiqf1ay55fp0" path="res://assets/Cards/card_potatomine.png" id="2_5aoi6"]
+
+[node name="plante" type="Panel" unique_id=1333581620]
+custom_minimum_size = Vector2(30, 30)
+offset_right = 65.0
+offset_bottom = 90.0
+script = ExtResource("1_5aoi6")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=128367591]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5aoi6")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=806033430]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -4.0
+grow_horizontal = 2
+grow_vertical = 0
+show_percentage = false
+
+[node name="Label" type="Label" parent="." unique_id=538965993]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.7182191, 0.71795386, 0, 1)
+theme_override_constants/outline_size = 0
+text = "100"
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="." unique_id=1974936716]
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

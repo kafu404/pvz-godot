@@ -19,6 +19,7 @@ func generer_soleil():
 	print("SOLEIL :D")
 	if scene_soleil != null:
 		var nouveau_soleil :  Soleil = scene_soleil.instantiate()
+		nouveau_soleil.soleil_count = prix_soleil
 		get_tree().current_scene.add_child(nouveau_soleil)
 		var position_rand = randf_range(-15,15)
 		nouveau_soleil.global_position = self.global_position
