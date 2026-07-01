@@ -1,16 +1,78 @@
 [gd_scene format=3 uid="uid://do5g20oj58wcd"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_xlckp"]
+[ext_resource type="Script" uid="uid://bvl01uqtqcbu4" path="res://framework/classes/Zombie/zombie.gd" id="1_4h7ay"]
+[ext_resource type="Texture2D" uid="uid://tcdbwpcvc5vj" path="res://assets/theRealSlimeShady.png" id="1_qcmrf"]
+
+[sub_resource type="Animation" id="Animation_4h7ay"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_4f24x"]
+resource_name = "walk"
+length = 1.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.099999994, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5kxhq"]
+_data = {
+&"RESET": SubResource("Animation_4h7ay"),
+&"walk": SubResource("Animation_4f24x")
+}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p42oe"]
+size = Vector2(41, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tknf"]
+size = Vector2(4, 81)
 
 [node name="Zombie" type="CharacterBody2D" unique_id=96668932]
 collision_layer = 0
 collision_mask = 0
 motion_mode = 1
+script = ExtResource("1_4h7ay")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1381134670]
-sprite_frames = SubResource("SpriteFrames_xlckp")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1193144225]
+libraries/ = SubResource("AnimationLibrary_5kxhq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=677009530]
 shape = SubResource("RectangleShape2D_p42oe")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=635238030]
+scale = Vector2(2.3124998, 2.171875)
+texture = ExtResource("1_qcmrf")
+hframes = 3
+vframes = 3
+
+[node name="detector" type="Area2D" parent="." unique_id=319318561]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detector" unique_id=999856644]
+position = Vector2(-23, 0)
+shape = SubResource("RectangleShape2D_4tknf")
+debug_color = Color(0.99999994, 0, 0.103435956, 0.41960785)
+
+[connection signal="area_entered" from="detector" to="." method="_on_detector_area_entered"]
+[connection signal="area_exited" from="detector" to="." method="_on_detector_area_exited"]

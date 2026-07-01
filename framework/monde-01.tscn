@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ttv3uxhanvoi" path="res://framework/monde_01.gd" id="1_35l75"]
 [ext_resource type="Texture2D" uid="uid://c3dci6un0frmh" path="res://assets/Items/Background/Background_0.jpg" id="1_rsgwo"]
 [ext_resource type="PackedScene" uid="uid://2wgp70nq1p1w" path="res://framework/UI/hud.tscn" id="5_puf7r"]
+[ext_resource type="PackedScene" uid="uid://do5g20oj58wcd" path="res://framework/classes/Zombie/zombie.tscn" id="5_sy8l6"]
 [ext_resource type="PackedScene" uid="uid://0b6amg2x0grg" path="res://framework/classes/cursor_plante.tscn" id="6_sy8l6"]
 
 [node name="monde" type="Node2D" unique_id=1250805820]
@@ -47,3 +48,6 @@ position = Vector2(1204, 456)
 
 [node name="Marker2D5" type="Marker2D" parent="ligne" unique_id=1945607694]
 position = Vector2(1212, 553)
+
+[node name="Zombie" parent="." unique_id=96668932 instance=ExtResource("5_sy8l6")]
+position = Vector2(715, 457)

@@ -138,6 +138,9 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_me2v4"]
+size = Vector2(65, 67)
+
 [node name="plantGeneration" type="Node2D" unique_id=358894358]
 script = ExtResource("1_13ikd")
 scene_soleil = ExtResource("2_ax582")
@@ -148,3 +151,12 @@ scene_soleil = ExtResource("2_ax582")
 sprite_frames = SubResource("SpriteFrames_13ikd")
 animation = &"idle"
 frame_progress = 0.12520418
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=582040389]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=971371585]
+position = Vector2(2.5, 1.5)
+shape = SubResource("RectangleShape2D_me2v4")
+debug_color = Color(0.9979996, 0, 0.1636788, 0.41960785)

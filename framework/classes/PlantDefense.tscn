@@ -123,6 +123,9 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4h7ay"]
+size = Vector2(41, 72)
+
 [node name="PlantDefense" type="Node2D" unique_id=560010461]
 script = ExtResource("1_1sqdf")
 
@@ -130,3 +133,10 @@ script = ExtResource("1_1sqdf")
 sprite_frames = SubResource("SpriteFrames_p42oe")
 animation = &"idle"
 frame_progress = 0.9481965
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1638722865]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=451549280]
+position = Vector2(8.5, 0)
+shape = SubResource("RectangleShape2D_4h7ay")
+debug_color = Color(0.9979996, 0, 0.1636788, 0.41960785)

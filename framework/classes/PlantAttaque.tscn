@@ -95,6 +95,9 @@ _data = {
 &"shoot": SubResource("Animation_33qtj")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_me2v4"]
+size = Vector2(61, 62)
+
 [node name="PlantAttaque" type="Node2D" unique_id=476260219]
 script = ExtResource("1_0hlqs")
 balle_instance = ExtResource("2_me2v4")
@@ -111,5 +114,12 @@ libraries/ = SubResource("AnimationLibrary_jfv13")
 texture = ExtResource("2_x1ip5")
 hframes = 4
 vframes = 7
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=136432980]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1413961899]
+position = Vector2(0.5, 7)
+shape = SubResource("RectangleShape2D_me2v4")
+debug_color = Color(0.9979996, 0, 0.1636788, 0.41960785)
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

@@ -6,9 +6,6 @@ extends plantBase
 @export var scene_soleil : PackedScene
 @onready var timer: Timer = $Timer
 
-
-
-
 func _ready():
 	init_plant()
 	timer.wait_time = temp_de_generation
