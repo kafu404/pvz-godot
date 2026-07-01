@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://do5g20oj58wcd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xlckp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p42oe"]
+
+[node name="Zombie" type="CharacterBody2D" unique_id=96668932]
+collision_layer = 0
+collision_mask = 0
+motion_mode = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1381134670]
+sprite_frames = SubResource("SpriteFrames_xlckp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=677009530]
+shape = SubResource("RectangleShape2D_p42oe")

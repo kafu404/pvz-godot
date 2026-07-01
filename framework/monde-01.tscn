@@ -1,32 +1,19 @@
 [gd_scene format=3 uid="uid://cvie5k3od4fjj"]
 
+[ext_resource type="Script" uid="uid://ttv3uxhanvoi" path="res://framework/monde_01.gd" id="1_35l75"]
 [ext_resource type="Texture2D" uid="uid://c3dci6un0frmh" path="res://assets/Items/Background/Background_0.jpg" id="1_rsgwo"]
-[ext_resource type="PackedScene" uid="uid://dyu3w82v8foci" path="res://framework/classes/PlantGeneration.tscn" id="2_wyqq2"]
-[ext_resource type="PackedScene" uid="uid://db5xq26qennpc" path="res://framework/classes/PlantAttaque.tscn" id="3_cnbn6"]
-[ext_resource type="PackedScene" uid="uid://nwkx08iny0uk" path="res://framework/classes/PlantDefense.tscn" id="4_nxqox"]
 [ext_resource type="PackedScene" uid="uid://2wgp70nq1p1w" path="res://framework/UI/hud.tscn" id="5_puf7r"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p42oe"]
-size = Vector2(71.5, 108.25)
+[ext_resource type="PackedScene" uid="uid://0b6amg2x0grg" path="res://framework/classes/cursor_plante.tscn" id="6_sy8l6"]
 
 [node name="monde" type="Node2D" unique_id=1250805820]
+script = ExtResource("1_35l75")
+ennemy_par_round = Array[int]([2, 4, 6, 8, 10])
+temp_de_round = Array[float]([3.0, 10.0, 10.0, 10.5, 20.0])
 
 [node name="Background0" type="Sprite2D" parent="." unique_id=140907156]
 position = Vector2(719.5, 320.5)
 scale = Vector2(1.0235714, 1.0783334)
 texture = ExtResource("1_rsgwo")
-
-[node name="plantGeneration" parent="Background0" unique_id=358894358 instance=ExtResource("2_wyqq2")]
-position = Vector2(-257.43195, -98.76352)
-temp_de_generation = 3.0
-
-[node name="PlantAttaque" parent="Background0" unique_id=476260219 instance=ExtResource("3_cnbn6")]
-position = Vector2(-159.73492, -89.48996)
-scale = Vector2(0.9769714, 0.92735696)
-
-[node name="PlantDefense" parent="Background0" unique_id=560010461 instance=ExtResource("4_nxqox")]
-position = Vector2(-160.71182, 32.921165)
-scale = Vector2(0.9769713, 0.9273569)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=247359195]
 
@@ -35,6 +22,28 @@ offset_top = -3.0
 offset_right = 1153.0
 offset_bottom = 644.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=899825441]
+[node name="cursorPlante" parent="." unique_id=974062323 instance=ExtResource("6_sy8l6")]
+z_index = 10
 position = Vector2(384, 454)
-shape = SubResource("RectangleShape2D_p42oe")
+
+[node name="Cellule" type="Node2D" parent="." unique_id=2128462010]
+position = Vector2(265, 86)
+
+[node name="Plant" type="Node2D" parent="." unique_id=110093792]
+
+[node name="ligne" type="Node2D" parent="." unique_id=1723010240]
+
+[node name="Marker2D" type="Marker2D" parent="ligne" unique_id=1282895782]
+position = Vector2(1203, 356)
+
+[node name="Marker2D2" type="Marker2D" parent="ligne" unique_id=59524783]
+position = Vector2(1193, 238)
+
+[node name="Marker2D3" type="Marker2D" parent="ligne" unique_id=187321546]
+position = Vector2(1178, 140)
+
+[node name="Marker2D4" type="Marker2D" parent="ligne" unique_id=2122025097]
+position = Vector2(1204, 456)
+
+[node name="Marker2D5" type="Marker2D" parent="ligne" unique_id=1945607694]
+position = Vector2(1212, 553)

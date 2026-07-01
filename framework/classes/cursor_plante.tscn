@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://0b6amg2x0grg"]
+
+[ext_resource type="Script" uid="uid://dpu35jb40i1qn" path="res://framework/classes/cursor_plante.gd" id="1_hj5ru"]
+
+[node name="cursorPlante" type="Node2D" unique_id=974062323]
+script = ExtResource("1_hj5ru")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1424079467]

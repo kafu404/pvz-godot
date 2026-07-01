@@ -1,3 +1,4 @@
+class_name PanelPlante
 extends Panel
 
 @export var texture : Texture2D
@@ -13,4 +14,4 @@ func _ready():
 
 func _on_gui_input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("click_gauche"):
-		print(str(placer_plante))
+		GameManager.select_plant(self)

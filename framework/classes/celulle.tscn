@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://tjs0yxgnpfyr" path="res://framework/classes/celulle.gd" id="1_n8rax"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_htlyr"]
-size = Vector2(71.5, 108.25)
+size = Vector2(79.09375, 102.125)
 
 [node name="celulle" type="Area2D" unique_id=525535596]
 collision_layer = 8
