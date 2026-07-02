@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4djnuwoys3n1"
-path="res://.godot/imported/HypnoShroomSleep_0.png-f88c7707669d1ba37044c5a530fd33b3.ctex"
+path="res://.godot/imported/HypnoShroomSleep_0.png-995a9b99e14d538578eb4101b8e5fe17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/HypnoShroom/HypnoShroomSleep/HypnoShroomSleep_0.png"
-dest_files=["res://.godot/imported/HypnoShroomSleep_0.png-f88c7707669d1ba37044c5a530fd33b3.ctex"]
+source_file="res://assets/plants/HypnoShroom/HypnoShroomSleep/HypnoShroomSleep_0.png"
+dest_files=["res://.godot/imported/HypnoShroomSleep_0.png-995a9b99e14d538578eb4101b8e5fe17.ctex"]
 
 [params]
 

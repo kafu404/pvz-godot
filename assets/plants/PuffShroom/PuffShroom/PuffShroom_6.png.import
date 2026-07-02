@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b28c2lqbthdoe"
-path="res://.godot/imported/PuffShroom_6.png-6ec55e51b55edd3ed9c10456d28cc403.ctex"
+path="res://.godot/imported/PuffShroom_6.png-2f9e8658bb6f751eda619cf2f82e331c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/PuffShroom/PuffShroom/PuffShroom_6.png"
-dest_files=["res://.godot/imported/PuffShroom_6.png-6ec55e51b55edd3ed9c10456d28cc403.ctex"]
+source_file="res://assets/plants/PuffShroom/PuffShroom/PuffShroom_6.png"
+dest_files=["res://.godot/imported/PuffShroom_6.png-2f9e8658bb6f751eda619cf2f82e331c.ctex"]
 
 [params]
 

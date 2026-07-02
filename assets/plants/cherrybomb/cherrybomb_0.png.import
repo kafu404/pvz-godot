@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://die5l4qb7osai"
-path="res://.godot/imported/CherryBomb_0.png-2884ac07413e6d9a821a49e1947a4cab.ctex"
+path="res://.godot/imported/cherrybomb_0.png-a80e48f15f52c7d2ad1830aa823ad598.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/CherryBomb/CherryBomb_0.png"
-dest_files=["res://.godot/imported/CherryBomb_0.png-2884ac07413e6d9a821a49e1947a4cab.ctex"]
+source_file="res://assets/plants/cherrybomb/cherrybomb_0.png"
+dest_files=["res://.godot/imported/cherrybomb_0.png-a80e48f15f52c7d2ad1830aa823ad598.ctex"]
 
 [params]
 

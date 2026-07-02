@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://case6b4xjjmxq"
-path="res://.godot/imported/Squash_8.png-da44b815caf705df440d1f0220207120.ctex"
+path="res://.godot/imported/Squash_8.png-072d059fe191da4f9007de33b0faf549.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/Squash/Squash/Squash_8.png"
-dest_files=["res://.godot/imported/Squash_8.png-da44b815caf705df440d1f0220207120.ctex"]
+source_file="res://assets/plants/Squash/Squash/Squash_8.png"
+dest_files=["res://.godot/imported/Squash_8.png-072d059fe191da4f9007de33b0faf549.ctex"]
 
 [params]
 

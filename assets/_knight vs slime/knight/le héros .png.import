@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tcdbwpcvc5vj"
-path="res://.godot/imported/theRealSlimeShady.png-d91a4daa2f2e334789df0a750770cde7.ctex"
+uid="uid://dosdbjdawgiih"
+path="res://.godot/imported/le héros .png-46bc73cc37164219e2dd485c794ce157.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/theRealSlimeShady.png"
-dest_files=["res://.godot/imported/theRealSlimeShady.png-d91a4daa2f2e334789df0a750770cde7.ctex"]
+source_file="res://assets/_knight vs slime/knight/le héros .png"
+dest_files=["res://.godot/imported/le héros .png-46bc73cc37164219e2dd485c794ce157.ctex"]
 
 [params]
 

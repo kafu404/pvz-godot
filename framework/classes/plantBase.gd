@@ -6,7 +6,6 @@ var pv : float = 100.0
 
 @export var cellule : Vector2
 @onready var animation: AnimationPlayer = $AnimationPlayer
-@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 
 
@@ -14,5 +13,11 @@ func init_plant():
 	pv = pv_max
 	if animation != null:
 		animation.play("idle")
-	elif animated_sprite != null:
-		animated_sprite.play("idle")
+	elif animation != null:
+		animation.play("idle")
+
+func degat_recu(degat : float):
+	pv -= degat
+	if pv <= 0:
+		queue_free()
+		return

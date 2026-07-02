@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtjuxk3y5v7pc"
-path="res://.godot/imported/Jalapeno_5.png-210e0f4b052585b2d57f5e4fb5dad7a7.ctex"
+path="res://.godot/imported/Jalapeno_5.png-25e51bf981297443e6a546646218ac17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/Jalapeno/Jalapeno/Jalapeno_5.png"
-dest_files=["res://.godot/imported/Jalapeno_5.png-210e0f4b052585b2d57f5e4fb5dad7a7.ctex"]
+source_file="res://assets/plants/Jalapeno/Jalapeno/Jalapeno_5.png"
+dest_files=["res://.godot/imported/Jalapeno_5.png-25e51bf981297443e6a546646218ac17.ctex"]
 
 [params]
 

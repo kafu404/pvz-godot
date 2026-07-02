@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pe8glfgllj32"
-path="res://.godot/imported/IceShroom_5.png-6c5c228adfbcdc5e49953fa83a34e4c7.ctex"
+path="res://.godot/imported/IceShroom_5.png-d4a4af5b1d31f1670ea71a7dfd1a64ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/IceShroom/IceShroom/IceShroom_5.png"
-dest_files=["res://.godot/imported/IceShroom_5.png-6c5c228adfbcdc5e49953fa83a34e4c7.ctex"]
+source_file="res://assets/plants/IceShroom/IceShroom/IceShroom_5.png"
+dest_files=["res://.godot/imported/IceShroom_5.png-d4a4af5b1d31f1670ea71a7dfd1a64ed.ctex"]
 
 [params]
 

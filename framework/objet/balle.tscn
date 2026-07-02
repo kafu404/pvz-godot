@@ -1,20 +1,20 @@
 [gd_scene format=3 uid="uid://b1cjw01ogcwu8"]
 
 [ext_resource type="Script" uid="uid://bf300y4pof8vm" path="res://framework/objet/balle.gd" id="1_vdaid"]
-[ext_resource type="Texture2D" uid="uid://c3iq74wgcjokp" path="res://assets/Bullets/PeaNormal/start/peaShoot.png" id="2_vdaid"]
+[ext_resource type="Texture2D" uid="uid://mul32m25f03t" path="res://assets/_knight vs slime/knight/proj feu.png" id="2_vdaid"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_p42oe"]
 radius = 12.0415945
 
 [node name="balle" type="Area2D" unique_id=327071935]
+collision_layer = 0
+collision_mask = 4
 script = ExtResource("1_vdaid")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1981534664]
-position = Vector2(-3.8146973e-06, -1.9073486e-06)
-scale = Vector2(1.695, 1.48)
+position = Vector2(0, -4.7683716e-07)
+scale = Vector2(2.2225003, 1.83375)
 texture = ExtResource("2_vdaid")
-hframes = 4
-frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=332470684]
 shape = SubResource("CircleShape2D_p42oe")
@@ -23,5 +23,6 @@ shape = SubResource("CircleShape2D_p42oe")
 position = Vector2(8, -6)
 rect = Rect2(-16, -2, 18, 17)
 
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

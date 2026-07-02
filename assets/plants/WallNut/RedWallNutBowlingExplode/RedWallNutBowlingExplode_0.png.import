@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://i0n8i7pkomq6"
-path="res://.godot/imported/RedWallNutBowlingExplode_0.png-16549b155236d43f2f472d8f8f2602c0.ctex"
+path="res://.godot/imported/RedWallNutBowlingExplode_0.png-8dccdd42638818987527a878da148855.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/WallNut/RedWallNutBowlingExplode/RedWallNutBowlingExplode_0.png"
-dest_files=["res://.godot/imported/RedWallNutBowlingExplode_0.png-16549b155236d43f2f472d8f8f2602c0.ctex"]
+source_file="res://assets/plants/WallNut/RedWallNutBowlingExplode/RedWallNutBowlingExplode_0.png"
+dest_files=["res://.godot/imported/RedWallNutBowlingExplode_0.png-8dccdd42638818987527a878da148855.ctex"]
 
 [params]
 

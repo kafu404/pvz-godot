@@ -10,6 +10,7 @@
 script = ExtResource("1_35l75")
 ennemy_par_round = Array[int]([2, 4, 6, 8, 10])
 temp_de_round = Array[float]([3.0, 10.0, 10.0, 10.5, 20.0])
+Zombie = ExtResource("5_sy8l6")
 
 [node name="Background0" type="Sprite2D" parent="." unique_id=140907156]
 position = Vector2(719.5, 320.5)
@@ -35,19 +36,21 @@ position = Vector2(265, 86)
 [node name="ligne" type="Node2D" parent="." unique_id=1723010240]
 
 [node name="Marker2D" type="Marker2D" parent="ligne" unique_id=1282895782]
-position = Vector2(1203, 356)
+position = Vector2(1183, 357)
 
 [node name="Marker2D2" type="Marker2D" parent="ligne" unique_id=59524783]
-position = Vector2(1193, 238)
+position = Vector2(1177, 238)
 
 [node name="Marker2D3" type="Marker2D" parent="ligne" unique_id=187321546]
 position = Vector2(1178, 140)
 
 [node name="Marker2D4" type="Marker2D" parent="ligne" unique_id=2122025097]
-position = Vector2(1204, 456)
+position = Vector2(1182, 472)
 
 [node name="Marker2D5" type="Marker2D" parent="ligne" unique_id=1945607694]
-position = Vector2(1212, 553)
+position = Vector2(1186, 562)
 
 [node name="Zombie" parent="." unique_id=96668932 instance=ExtResource("5_sy8l6")]
 position = Vector2(715, 457)
+
+[node name="TimerRound" type="Timer" parent="." unique_id=1752018280]

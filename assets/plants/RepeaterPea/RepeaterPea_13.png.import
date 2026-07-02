@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2risw7i30vhf"
-path="res://.godot/imported/RepeaterPea_13.png-d0dc65e8bd8b5dc8da345a5163a98da8.ctex"
+path="res://.godot/imported/RepeaterPea_13.png-696a3a672c53d5816d2cf894ae85fad1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/RepeaterPea/RepeaterPea_13.png"
-dest_files=["res://.godot/imported/RepeaterPea_13.png-d0dc65e8bd8b5dc8da345a5163a98da8.ctex"]
+source_file="res://assets/plants/RepeaterPea/RepeaterPea_13.png"
+dest_files=["res://.godot/imported/RepeaterPea_13.png-696a3a672c53d5816d2cf894ae85fad1.ctex"]
 
 [params]
 

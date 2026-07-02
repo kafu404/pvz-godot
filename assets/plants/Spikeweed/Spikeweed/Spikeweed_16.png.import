@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://boxp6ou1qjwap"
-path="res://.godot/imported/Spikeweed_16.png-b89f53ab7aab34a1b5a030e880a1b59b.ctex"
+path="res://.godot/imported/Spikeweed_16.png-458ce601d56e4d31ddc7dddee9db05fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/Spikeweed/Spikeweed/Spikeweed_16.png"
-dest_files=["res://.godot/imported/Spikeweed_16.png-b89f53ab7aab34a1b5a030e880a1b59b.ctex"]
+source_file="res://assets/plants/Spikeweed/Spikeweed/Spikeweed_16.png"
+dest_files=["res://.godot/imported/Spikeweed_16.png-458ce601d56e4d31ddc7dddee9db05fe.ctex"]
 
 [params]
 

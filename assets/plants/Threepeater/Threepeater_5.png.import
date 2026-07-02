@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvlu214n3ufjj"
-path="res://.godot/imported/Threepeater_5.png-e380e851cec5ffe8a8676f1be16fe56c.ctex"
+path="res://.godot/imported/Threepeater_5.png-4a4ab54a303d1472a3ceb5b5dcb6272a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/Threepeater/Threepeater_5.png"
-dest_files=["res://.godot/imported/Threepeater_5.png-e380e851cec5ffe8a8676f1be16fe56c.ctex"]
+source_file="res://assets/plants/Threepeater/Threepeater_5.png"
+dest_files=["res://.godot/imported/Threepeater_5.png-4a4ab54a303d1472a3ceb5b5dcb6272a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://i3fal0m8e0uh"
-path="res://.godot/imported/SquashAttack_3.png-8c24ce607e94f6e03667461a5a3f29a1.ctex"
+path="res://.godot/imported/SquashAttack_3.png-06b4f86c279014a4d85a7f84414c38b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/Squash/SquashAttack/SquashAttack_3.png"
-dest_files=["res://.godot/imported/SquashAttack_3.png-8c24ce607e94f6e03667461a5a3f29a1.ctex"]
+source_file="res://assets/plants/Squash/SquashAttack/SquashAttack_3.png"
+dest_files=["res://.godot/imported/SquashAttack_3.png-06b4f86c279014a4d85a7f84414c38b4.ctex"]
 
 [params]
 

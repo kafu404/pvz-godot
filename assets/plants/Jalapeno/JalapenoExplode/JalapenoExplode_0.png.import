@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvb00g3bt3y0o"
-path="res://.godot/imported/JalapenoExplode_0.png-ff901c29a1b8674d78ca52390e3f391b.ctex"
+path="res://.godot/imported/JalapenoExplode_0.png-f03eceb3d35f3ca690d8d959f764be00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/Jalapeno/JalapenoExplode/JalapenoExplode_0.png"
-dest_files=["res://.godot/imported/JalapenoExplode_0.png-ff901c29a1b8674d78ca52390e3f391b.ctex"]
+source_file="res://assets/plants/Jalapeno/JalapenoExplode/JalapenoExplode_0.png"
+dest_files=["res://.godot/imported/JalapenoExplode_0.png-f03eceb3d35f3ca690d8d959f764be00.ctex"]
 
 [params]
 

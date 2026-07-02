@@ -3,14 +3,17 @@ extends Monde
 @onready var cellule: Node2D = $Cellule
 @onready var plant: Node2D = $Plant
 @onready var cursor_plante: CursorPlante = $cursorPlante
+@onready var TimerRound: Timer = $TimerRound
+
+
 
 func _ready():
 	GameManager.current_world = self
 	GameManager.plante_cursor = $cursorPlante
-	
+
 	create_cellule()
 	cellule.visible = false
-	
+	await get_tree().create_timer(3.0).timeout
 	initialiser_monde()
 	
 func montrer_cellule(valeur: bool):

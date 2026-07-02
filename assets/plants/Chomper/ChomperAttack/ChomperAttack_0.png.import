@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5d3uqrr6s4g5"
-path="res://.godot/imported/ChomperAttack_0.png-85886a71ad87c18379321955638c5085.ctex"
+path="res://.godot/imported/ChomperAttack_0.png-32ee07d76a629e2b9ddbd761db31e37d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/Chomper/ChomperAttack/ChomperAttack_0.png"
-dest_files=["res://.godot/imported/ChomperAttack_0.png-85886a71ad87c18379321955638c5085.ctex"]
+source_file="res://assets/plants/Chomper/ChomperAttack/ChomperAttack_0.png"
+dest_files=["res://.godot/imported/ChomperAttack_0.png-32ee07d76a629e2b9ddbd761db31e37d.ctex"]
 
 [params]
 

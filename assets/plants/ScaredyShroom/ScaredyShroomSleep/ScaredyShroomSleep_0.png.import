@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://breg5bbq4uxis"
-path="res://.godot/imported/ScaredyShroomSleep_0.png-f453c543b27f66267ac33e8768405bb9.ctex"
+path="res://.godot/imported/ScaredyShroomSleep_0.png-2c9ed3af4647549d7bf4e1250dab9bb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Plants/ScaredyShroom/ScaredyShroomSleep/ScaredyShroomSleep_0.png"
-dest_files=["res://.godot/imported/ScaredyShroomSleep_0.png-f453c543b27f66267ac33e8768405bb9.ctex"]
+source_file="res://assets/plants/ScaredyShroom/ScaredyShroomSleep/ScaredyShroomSleep_0.png"
+dest_files=["res://.godot/imported/ScaredyShroomSleep_0.png-2c9ed3af4647549d7bf4e1250dab9bb3.ctex"]
 
 [params]
 
